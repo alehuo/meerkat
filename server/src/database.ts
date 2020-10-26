@@ -1,7 +1,7 @@
 import Mongoose from 'mongoose'
 export const connect = async () => {
   if (!process.env.DB_URI) {
-    throw new Error('DB_URI is not defined')
+    throw new Error('DB_URI is undefined')
   }
   const uri = process.env.DB_URI
   const mongoose = await Mongoose.connect(uri, {
