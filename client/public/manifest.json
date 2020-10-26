@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Meerkat",
+  "name": "Overall badge marketplace",
   "icons": [
     {
       "src": "favicon.ico",
