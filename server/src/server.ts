@@ -42,7 +42,7 @@ app.use(express.static(join(__dirname, '..', '..', 'client', 'build')))
 
 app.get('/health', (_req, res) => res.sendStatus(200))
 
-app.all('/*', (_req, res) => res.sendFile(join(__dirname, '..', 'client', 'build', 'index.html')))
+app.all('/*', (_req, res) => res.sendFile(join(__dirname, '..', '..', 'client', 'build', 'index.html')))
 
 connect().then(() => {
   app.listen(port, () => console.log(`App listeting on port ${port}`))
